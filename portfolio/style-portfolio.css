@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    color: #2F2F2F;
+    font-size: 1.125rem;
+
+    box-sizing: border-box;
+}
+
+.header-container {
+    background-color: #002E6A;
+    min-height: 70px;
+    margin-bottom: 40px;
+}
+
+header {
+    max-width: 1024px;
+    min-height: 50px;
+    margin: 0 auto;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #E29E0A;
+    transition: 0.3s;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+}
+
+.navbutton {
+    margin-left: 40px;
+    font-size: 1.875rem;
+}
+
+.mob-wrapper {
+    display: none;
+}
+
+/* Section I */
+
+.container {
+    max-width: 1024px;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2.75rem;
+    padding-top: 2rem;
+}
+
+.container-section {
+    margin-bottom: 4rem;
+}
+
+h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2.4rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.p-description {
+    line-height: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.black-text {
+    font-weight: bold;
+}
+
+/* Card section */
+
+.section-cards {
+    width: 100%;
+    height: 100%;
+    padding: 3rem 0;
+    background-color: #f9f9f9;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+.card {
+    margin: 1rem;
+    box-shadow: 2px 4px 6px #00000029;
+    position: relative;
+    overflow: hidden;
+} 
+
+.project-text {
+    text-align: center;
+    letter-spacing: .1rem;
+    position: absolute;
+    /* top: -7rem;
+    left: 5rem; */
+    top: -10rem; /*center and send the text to the top outside the box, hidden with overflow*/
+    left: 50%;
+    transform: translate(-50%, 20%); 
+    transition: top .3s;
+    z-index: 10;
+}
+
+.image-portfolio{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 3px;
+ 
+}
+
+.card:hover .project-text{
+    top: 4rem;
+}
+
+.card:hover .image-portfolio {
+    opacity: .1;
+    transition: opacity .3s;
+}
+
+.project-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #002E6A;
+    text-transform: uppercase;
+}
+
+.project-technologies {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #E29E0A;
+    margin-bottom: 1rem;
+}
+
+.link {
+    width: 400px;
+    background-color: #002E6A;
+    padding: 3px 30px;
+    border-radius: 100px;
+
+    font-size: 1.2rem;
+    font-weight: 800;
+    color:#f9f9f9;
+    letter-spacing: .1rem;
+    cursor: pointer;
+}
+
+
+/*Mobile responsive nav*/
+
+@media(max-width:800px){
+    .navbutton{
+        display: none;
+    }
+
+    .mob-nav {
+        display: none;
+    }
+    .mob-wrapper {
+        display: block;
+        text-align:right;
+        margin: auto 30px;
+    }
+
+    .navbutton-2 {
+        text-align: center;
+        background-color: #E29E0A;
+        padding: 15px 30px;
+        text-align: center;
+    }
+
+    .container {
+        margin: 0 10px;
+    }
+
+    }

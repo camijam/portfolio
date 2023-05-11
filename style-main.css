@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    color: #2F2F2F;
+    font-size: 1.125rem;
+
+    box-sizing: border-box;
+}
+
+.header-container {
+    background-color: #002E6A;
+    min-height: 70px;
+    margin-bottom: 40px;
+}
+
+header {
+    max-width: 1024px;
+    min-height: 50px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-a {
+    color: white;
+}
+
+.nav-a:hover {
+    color: #E29E0A;
+    transition: 0.3s;
+}
+
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+}
+
+.navbutton {
+    margin-left: 40px;
+    font-size: 1.875rem;
+}
+
+.mob-wrapper {
+    display: none;
+}
+
+/*Section I*/
+
+.main-container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.big-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.camilo-photo {
+    box-sizing: border-box;
+}
+
+.main-message {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2.75rem;
+    line-height: 54px;
+    margin-top: 96px;
+    margin-bottom: 30px;
+}
+
+.camilo {
+    color: #E29E0A;
+}
+
+.p-description {
+    max-width: 498px;
+    font-size: 1.25rem;
+    line-height: 29px;
+    margin-bottom: 50px;
+}
+
+.btn:link,
+.btn:visited {
+    padding: 10px 30px;
+    font-size: 1.4rem;
+    border-radius: 100px;
+    border: 3px solid #000;
+    box-shadow: 3px 4px 6px #00000029;
+}
+
+.container-button {
+    animation: moveRight 1s ease-out;
+}
+
+.btn:hover {
+    background-color: #E29E0A;
+    transition: 0.3s;
+}
+
+.btn-blue {
+    background-color: #002E6A;
+    color: white;
+    margin-right: 50px;
+}
+
+.btn-white {
+    background-color: #ffffff;
+    color: #2F2F2F;
+}
+
+
+/*Section II*/
+
+.big-box2 {
+    margin-top: 40px;
+}
+
+h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2.4rem;
+}
+
+.cards {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    text-align: center;
+    max-width: 240px;
+    box-shadow: 2px 4px 6px #00000029;
+    height: 300px;
+    margin-bottom: 6rem;
+}
+
+.card:hover {
+    /*small move*/
+    transform: translateY(-.3rem);
+}
+
+.icon {
+    height: 100px;
+    width: auto;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+.topic {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.text {
+    font-size: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 1.5rem;
+}
+
+/*Animation*/
+
+@keyframes moveRight {
+    0% {
+        opacity: 0;
+        transform: translateX(5rem);
+    }
+
+    80% {
+        transform: translateX(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+/*Mobile responsive*/
+
+@media(max-width:800px) {
+
+    /*Nav*/
+    .navbutton {
+        display: none;
+    }
+
+    .mob-nav {
+        display: none;
+    }
+
+    .mob-wrapper {
+        display: block;
+        text-align: right;
+        margin: auto 30px;
+    }
+
+    .navbutton-2 {
+        text-align: center;
+        background-color: #E29E0A;
+        padding: 15px 30px;
+        text-align: center;
+    }
+
+    .main-container {
+        margin-left: 10px;
+    }
+
+
+    /*Section I*/
+    .btn-white {
+        display: none;
+    }
+
+    .camilo-photo {
+        display: none;
+    }
+
+    .main-message {
+        font-size: 2.2rem;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .big-box2 {
+        margin-top: 60px;
+    }
+
+    .card {
+        height: 280px;
+        margin-bottom: 3rem;
+    }
+    
+
+
+    /*Section II*/
+
+    .cards {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}

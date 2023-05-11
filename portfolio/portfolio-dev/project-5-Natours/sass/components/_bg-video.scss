@@ -1,0 +1,16 @@
+.bg-video {
+    position: absolute; //parent section stories for position:relative
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1; //to ensure that it will behiend other elements
+    opacity: .3;
+    overflow: hidden;
+
+    &__content {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; //the element will fill the parent while still mantaining its aspect radio
+    }
+}

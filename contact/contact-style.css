@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@400;700&display=swap');
+* {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    color: #2F2F2F;
+    font-size: 1.125rem;
+    
+    box-sizing: border-box;
+}
+
+.header-container {
+    background-color: #002E6A;
+    min-height: 70px;
+    margin-bottom: 40px;
+}
+
+header {
+    max-width: 1024px;
+    min-height: 50px;
+    margin: 0 auto;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #E29E0A;
+    transition: 0.3s;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+}
+
+.navbutton {
+    margin-left: 40px;
+    font-size: 1.875rem;
+}
+
+.mob-wrapper {
+    display: none;
+}
+
+/*Section I*/
+
+.main-container {
+    max-width: 500px;
+    margin: auto;
+}
+
+.card {
+    box-shadow: 4px 5px 6px #00000029;
+    margin-bottom: 3rem;
+    padding-left: 2rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    padding-top: 2rem;
+}
+
+.text {
+    font-size: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon:hover {
+    transform: translateY(-.5rem);
+}
+
+
+
+
+/*Mobile responsive nav*/
+
+@media(max-width:800px){
+    .navbutton{
+        display: none;
+    }
+    
+    .mob-nav {
+        display: none;
+    }
+    .mob-wrapper {
+        display: block;
+        text-align:right;
+        margin: auto 30px;
+    }
+    
+    .navbutton-2 {
+        text-align: center;
+        background-color: #E29E0A;
+        padding: 15px 30px;
+        text-align: center;
+    }
+
+    .main-container {
+        margin: 0 10px;
+    }
+    
+    }
