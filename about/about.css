@@ -106,17 +106,27 @@ h2 {
     font-size: 20px;
 }
 
-.box-2 {
+/* .box-2 {
     width: 50%;
     margin-bottom: 3rem;
 }
 
 .logos {
     padding-top: 25px;
-    /* arreglito para logos ordenados si se agregan mas iconos quitar el margin-left*/
     margin-left: 15px;
     flex-wrap: wrap;
     animation: moveUpDown 1s ease-out;
+} */
+
+.box-2 {
+    width: 50%;
+}
+
+.logos {
+    padding-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
 }
 
 
@@ -181,12 +191,13 @@ h2 {
     }
 
     .box-2 {
-        display: none;
+        width: 100%;
     }
 
     .logos {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
 }

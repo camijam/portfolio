@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="121" height="136" viewBox="0 0 121 136">
+  <defs>
+    <filter id="Rectangle_35" x="0" y="0" width="121" height="136" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Adobe" x="23" y="78" width="76" height="42" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_23" data-name="Group 23" transform="translate(-756 -718)">
+    <g id="Group_22" data-name="Group 22" transform="translate(-278 140)">
+      <g transform="matrix(1, 0, 0, 1, 1034, 578)" filter="url(#Rectangle_35)">
+        <rect id="Rectangle_35-2" data-name="Rectangle 35" width="103" height="118" rx="15" transform="translate(6 6)" fill="#0f2d66"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 1034, 578)" filter="url(#Adobe)">
+        <text id="Adobe-2" data-name="Adobe" transform="translate(29 103)" fill="#fff" font-size="20" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Adobe</tspan></text>
+      </g>
+    </g>
+    <path id="Icon_simple-adobepremiere" data-name="Icon simple-adobepremiere" d="M0,.45v60H60V.45H0ZM2.5,3.014h55V57.886H2.5ZM15.743,14.5c0-.169.043-.3.25-.3,1.608-.085,3.958-.128,6.432-.128,6.93,0,9.943,3.895,9.943,8.887,0,6.513-4.6,9.308-10.248,9.308-.95,0-1.28-.044-1.94-.044v9.854c0,.213-.083.3-.287.3h-3.86c-.207,0-.29-.085-.29-.3ZM20.18,28.119c.578.041,1.033.041,2.023.041,2.927,0,5.667-1.056,5.667-5.118,0-3.256-1.955-4.908-5.3-4.908-.99,0-1.938.041-2.393.085Zm16-2.328c0-.295,0-1.056-.123-2.495,0-.213.028-.256.193-.338a25.477,25.477,0,0,1,9.143-1.777c.2,0,.287.041.287.254v3.723c0,.21-.065.254-.272.254a13.971,13.971,0,0,0-4.725.508V42.076c0,.213-.085.3-.29.3H36.467c-.2,0-.287-.085-.287-.3Z" transform="translate(784 735.55)" fill="#fff"/>
+  </g>
+</svg>
