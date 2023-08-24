@@ -165,6 +165,18 @@ h2 {
 
 /*Mobile responsive nav*/
 
+@media(max-width:1000px) {
+
+    .header-container{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .container{
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+}
+
 @media(max-width:800px){
     .navbutton{
         display: none;
@@ -176,7 +188,7 @@ h2 {
     .mob-wrapper {
         display: block;
         text-align:right;
-        margin: auto 30px;
+        margin: auto;
     }
 
     .navbutton-2 {
@@ -187,7 +199,8 @@ h2 {
     }
 
     .container {
-        margin: 0 10px;
+        margin-right: 2rem;
+        margin-left: 2rem;
     }
 
     }

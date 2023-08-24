@@ -151,10 +151,23 @@ h2 {
 
 /*Mobile responsive nav*/
 
+@media(max-width:1000px) {
+
+    .header-container{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .main-container{
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+}
+
 @media(max-width:800px) {
 
     .main-container {
-        margin-left: 10px;
+        margin-right: 2rem;
+        margin-left: 2rem;
     }
 
     .navbutton {
@@ -168,7 +181,7 @@ h2 {
     .mob-wrapper {
         display: block;
         text-align: right;
-        margin: auto 30px;
+        margin: auto;
     }
 
     .navbutton-2 {
@@ -176,10 +189,6 @@ h2 {
         background-color: #E29E0A;
         padding: 15px 30px;
         text-align: center;
-    }
-
-    .main-container {
-        margin: 0 10px;
     }
 
     .big-box {
@@ -200,4 +209,19 @@ h2 {
         justify-content: center;
     }
 
+}
+
+@media(max-width:420px) {
+    .title, .university {
+        font-size: 1.1rem;
+    }
+
+    .logos {
+        gap: 2rem;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
 }
