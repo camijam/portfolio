@@ -78,6 +78,7 @@ nav {
 .icons {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 5rem;
 }
 
 .icon {
@@ -89,6 +90,23 @@ nav {
     transform: translateY(-.5rem);
 }
 
+/* Footer */
+
+.footer {
+    background-color: #002E6A;
+    height: 8rem;
+    margin-top: 20px;
+}
+
+.text-footer {
+    padding-top: 2rem;
+    font-size: .8rem;
+    text-align: center;
+    color: #e4e4e4;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    line-height: 1.2rem;
+}
 
 
 
