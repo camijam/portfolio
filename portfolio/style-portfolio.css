@@ -80,6 +80,20 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 4px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #fff;
+    font-size: .9rem;
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    background-color: #002E6A;
+}
+
 .certification {
     color: #002E6A;
 }
