@@ -9,7 +9,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #2F2F2F;
     font-size: 1.125rem;
-
+    /* IMPORTANTE */
     box-sizing: border-box;
 }
 
@@ -28,6 +28,7 @@ header {
 a {
     text-decoration: none;
     cursor: pointer;
+    color: white;
 }
 
 .nav-a {
@@ -36,7 +37,7 @@ a {
 
 .nav-a:hover {
     color: #E29E0A;
-    transition: 0.3s;
+    transition: 1s;
 }
 
 
@@ -48,7 +49,7 @@ nav {
 
 .navbutton {
     margin-left: 40px;
-    font-size: 1.875rem;
+    font-size: 1.3rem;
 }
 
 .mob-wrapper {
@@ -61,6 +62,10 @@ nav {
     max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.black-text {
+    font-weight: bold;
 }
 
 .big-box {
@@ -76,7 +81,7 @@ nav {
     font-family: 'Nunito', sans-serif;
     font-size: 2.75rem;
     line-height: 54px;
-    margin-top: 96px;
+    margin-top: 50px;
     margin-bottom: 30px;
 }
 
@@ -92,13 +97,27 @@ nav {
     margin-bottom: 50px;
 }
 
-.btn:link,
-.btn:visited {
-    padding: 8px 40px;
-    font-size: 1.2rem;
-    border-radius: 100px;
-    border: 3px solid #000;
-    box-shadow: 3px 4px 6px #00000029;
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 4px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    background-color: #002E6A;
+    margin-right: 50px;
+    font-weight: 500;
+}
+
+/* pequena correccion responsive funciona */
+@media screen and (max-width: 500px) {
+    .btn {
+        margin-bottom: 2rem;
+    }
 }
 
 .container-button {
@@ -110,12 +129,6 @@ nav {
     transition: 0.3s;
 }
 
-.btn-blue {
-    background-color: #002E6A;
-    color: white;
-    margin-right: 50px;
-}
-
 .mini-icon {
     width: 20px;
     height: 20px;
@@ -125,16 +138,222 @@ nav {
     opacity: .8;
 }
 
-/* .btn-white {
-    background-color: #ffffff;
-    color: #2F2F2F;
-} */
+.mini-icon-paris {
+    width: 35px;
+    position: relative;
+    right: 11px;
+    top: 2px;
+}
+
+
+/* Section time-line */
+
+.time-line {
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.title-time-line {
+    margin-bottom: 100px;
+}
+
+.container-line {
+    padding: 10px 70px;
+    position: relative;
+    width: 50%;
+    /* cambiar al color de mi sitio */
+    background-color: #002E6A;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+
+@keyframes movedown {
+    0% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.container-line:nth-child(1) {
+    animation-delay: 0s;
+}
+.container-line:nth-child(2) {
+    animation-delay: 1s;
+}
+.container-line:nth-child(3) {
+    animation-delay: 2s;
+}
+.container-line:nth-child(4) {
+    animation-delay: 3s;
+}
+.container-line:nth-child(5) {
+    animation-delay: 4s;
+}
+.container-line:nth-child(6) {
+    animation-delay: 5s;
+}
+
+/* fin adaptar */
+
+.title-organization {
+    font-size: 1.8rem;
+}
+
+.text-box {
+    padding: 20px 20px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.text-box-link {
+    color: #2473db;
+}
+
+.text-box-p {
+    line-height: 1.5;
+    margin-bottom: .8rem;
+}
+
+.lista {
+    padding-left: 15px;
+    line-height: 1.2;
+}
+
+.small {
+    color: rgb(73, 73, 73);
+    margin-bottom: 10px;
+}
+
+.left-container {
+    left: 0;
+}
+
+.right-container {
+    left: 50%;
+}
+
+.container-line img {
+    position: absolute;
+    width: 53px;
+    /* volver redondo, solucion canva ? */
+    /* border-radius: 50px; */
+    right: -20px;
+    top: 32px;
+    z-index: 10px;
+}
+
+.right-container img {
+    left: -20px;
+}
+
+.time-line::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    /* color  */
+    background-color: #002E6A;
+    top: 50px;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 6s linear forwards;
+}
+@keyframes moveline {
+    0%{
+        height: 0;
+    }
+
+    100%{
+        height: 100%;
+    }
+}
+
+.text-box h2 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.left-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #fff;
+    right: -15px;
+}
+
+.right-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #fff;
+    left: -15px;
+}
+
+@media screen and (max-width: 800px) {
+    .time-line{
+        margin: 50px auto;
+    }
+
+    .time-line::after {
+        left: 31px;
+    }
+
+    .container-line {
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+        margin-bottom: 1rem;
+    }
+
+    .text-box {
+        font-size: 13px;
+        padding: 10px 20px;
+    }
+
+    .title-organization {
+        font-size: 1.3rem;
+    }
+
+    .text-box small {
+        margin-bottom: 10px;
+    }
+
+    .right-container {
+        left: 0;
+    }
+
+    .left-container img, .right-container img {
+        left: 10px;
+    }
+
+    .left-container-arrow, .right-container-arrow {
+        border-right: 15px solid #fff;
+        border-left: 0;
+        left: -15px;
+    }
+}
 
 
 /*Section II*/
 
 .big-box2 {
-    margin-top: 40px;
+    margin-top: 120px;
 }
 
 h2 {
@@ -231,29 +450,35 @@ h2 {
     }
 }
 
+/* transofrmacion menu */
+
+@media (max-width:800px) {
+/*Nav*/
+.navbutton {
+    display: none;
+}
+
+.mob-nav {
+    display: none;
+}
+
+.mob-wrapper {
+    display: block;
+    text-align: right;
+    margin: auto;
+}
+
+ .navbutton-2 {
+    text-align: center;
+    background-color: #E29E0A;
+    padding: 15px 30px;
+    text-align: center;
+    margin-left: -40px;
+    margin-right: -40px;
+}
+}
+
 @media(max-width:910px) {
-
-    /*Nav*/
-    .navbutton {
-        display: none;
-    }
-
-    .mob-nav {
-        display: none;
-    }
-
-    .mob-wrapper {
-        display: block;
-        text-align: right;
-        margin: auto;
-    }
-
-    .navbutton-2 {
-        text-align: center;
-        background-color: #E29E0A;
-        padding: 15px 30px;
-        text-align: center;
-    }
 
     /*Section I*/
 
@@ -278,7 +503,7 @@ h2 {
     }
 
     .big-box2 {
-        margin-top: 40px;
+        margin-top: 60px;
     }
 
     .card {

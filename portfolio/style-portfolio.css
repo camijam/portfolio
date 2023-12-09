@@ -44,7 +44,7 @@ nav {
 
 .navbutton {
     margin-left: 40px;
-    font-size: 1.875rem;
+    font-size: 1.3rem;
 }
 
 .mob-wrapper {
@@ -62,6 +62,7 @@ h1 {
     font-family: 'Nunito', sans-serif;
     font-size: 2.75rem;
     padding-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .container-section {
@@ -80,6 +81,13 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+.mini-icon {
+    width: 30px;
+    position: relative;
+    top: 7px;
+    right: 7px;
+}
+
 .btn {
     display: inline-block;
     cursor: pointer;
@@ -88,7 +96,7 @@ h2 {
     text-decoration: none;
     color: #fff;
     font-size: .9rem;
-    padding: 5px 15px;
+    padding: 15px 15px;
     border: none;
     outline: none;
     background-color: #002E6A;
@@ -233,6 +241,8 @@ h2 {
         background-color: #E29E0A;
         padding: 15px 30px;
         text-align: center;
+        margin-left: -40px;
+        margin-right: -40px;
     }
 
     .container {
