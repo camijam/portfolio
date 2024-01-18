@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@400;500;700&display=swap');
 
 * {
     box-sizing: inherit;
@@ -56,6 +56,10 @@ nav {
     display: none;
 }
 
+.burgermenu {
+    width: 35px;
+}
+
 /*Section I*/
 
 .main-container {
@@ -94,7 +98,27 @@ nav {
     max-width: 498px;
     font-size: 1.25rem;
     line-height: 29px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+}
+
+.p-description-black {
+    max-width: 498px;
+    font-size: 1.25rem;
+    line-height: 29px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.list-langues {
+    margin-bottom: 30px;
+}
+
+.list-langues li {
+    padding: 5px 0;
 }
 
 .btn {

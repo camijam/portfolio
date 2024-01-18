@@ -51,6 +51,10 @@ nav {
     display: none;
 }
 
+.burgermenu {
+    width: 35px;
+}
+
 /*Section I*/
 
 .main-container {
